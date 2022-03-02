@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-//bypass backend api call and always be happy
+// bypass backend api call and always be happy
 var ALWAYS_HAPPY = false
 
 var sensorsWriteAPI = "http://mood-sensors.mood-test.sk.tanzu-sm.io/write"
