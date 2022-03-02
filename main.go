@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	log.Println(r.RemoteAddr, r.Method, r.URL.String())
 
-	fmt.Fprintf(w, "<H1><font color='navy'>Welcome to the DevX Mood Analyzer </font></H1><H2>")
+	fmt.Fprintf(w, "<H1><font color='navy'>Welcome to the DevX Mood Analyzer 0.1</font></H1><H2>")
 
 	if ALWAYS_HAPPY == false {
 		fmt.Fprintf(w, "<font color='red'>")
@@ -28,7 +28,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "</H2>")
 
 		//call api to write sensor data backend-api and display sensor data
-		for i := 1; i < 11; i++ {
+		for i := 1; i < 2; i++ {
 			http.Get(sensorsWriteAPI)
 		}
 		//call api to read sensor data and display it
