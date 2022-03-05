@@ -18,7 +18,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 	log.Println(r.RemoteAddr, r.Method, r.URL.String())
 
-	fmt.Fprintf(w, "<H1><font color='navy'>Welcome to the DevX Mood Analyzer 0.1</font></H1><H2>")
+	fmt.Fprintf(w, "<H1><font color='navy'>Welcome to the DevX Mood Analyzer 0.1a</font></H1><H2>")
 
 	if ALWAYS_HAPPY == false {
 		fmt.Fprintf(w, "<font color='red'>")
